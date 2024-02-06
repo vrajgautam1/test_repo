@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Login form - using form tag</h1>
+    <form action="">
+
+
+        <div><label for="name">Name</label><input type="text" name="name"></div>
+        <div><label for="email">Email</label><input type="email" name="email"></div>
+        <div><label for="phone">Phone-Number</label><input type="tel" name="phone"></div>
+
+        <div>
+        <p>Gender</p>
+        <label>Male</label><input type="radio" name="gender">
+        <label>Female</label><input type="radio" name="gender">
+        </div>
+
+        <div>
+        <p>Select your preferred Course</p>
+        <select name="" id="">
+            <option default>Course</option>
+            <option Value="full-stack">Full Stack</option>
+            <option Value="front-end">Front end</option>
+            <option Value="back-end">back end</option>
+        </select>
+        </div>
+
+        <div><label for="birthdate">Select Your Birthdate</label><input type="number" name="birthdate"></div>
+        <div><p>Enter your feedback</p><textarea name="" id="" cols="30" rows="10"></textarea></div>
+        <div><input type="submit" name="name"><input type="reset" value="reset"></div>
+        
+    </form>
+
+    <hr>
+
+    <h1>Login form - using form tag and table</h1>
+    <form action="">
+        <table border="1" align="center" cellspacing="10px" cellpadding="">
+            <tr>
+                <td colspan="2" align="center">Enter your data</td>
+            </tr>
+
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" name="name" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="phone">Phone-Number</label></td>
+                    <td><input type="tel" name="phone" pattern="[0-9]{10}"></td>
+                </tr>
+
+                <tr rowspan="2" height="20px"></tr>
+
+                <tr>
+                    <td><p>Gender</p></td>
+                    <td align="left"><input type="radio" name="gender"><label>Male</label><br>
+                        <input type="radio" name="gender"><label>Female</label></td>
+                </tr>
+
+                <tr>
+                    <td><p>Select your <br>preferred Course</p></td>
+                    <td align="center"><select name="" id="">
+                        <option default>Course</option>
+                        <option Value="full-stack">Full Stack</option>
+                        <option Value="front-end">Front end</option>
+                        <option Value="back-end">back end</option>
+                    </select></td>
+                </tr>
+
+                <tr>
+                    <td><label for="birthdate">Select Your Birthdate</label></td>
+                    <td><input type="number" name="birthdate"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><p>Enter your feedback</p></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                </tr>
+
+                <!-- <tr rowspan="2" height="10px"></tr> -->
+                
+                <tr>
+                    <td><input type="submit" name="name"></td>
+                    <td><input type="reset" value="reset"></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
